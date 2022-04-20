@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/formulario.js"></script>
+    <title>Iniciar sesion</title>
+</head>
+<body>
+<?php
+include "./includes/header.php"
+?>
+<section class="form-register">
+    <form name=form action="index.php" autocomplete="off" class="form-registro">
+        <h4>Iniciar sesión</h4>
+        <input type="text" id="usuario" placeholder="Ingresa tu Usuario" required>
+        <input type="password" id="contrasena" placeholder="Ingresa tu contraseña" required>
+        <input onclick=inicioSesion() class="botons" type="button" value="Acceder">
+        <p><a href="login.php">¿Olvidaste la contraseña?</a></p>
+        <p><a href="registrate.php">¿No tienes cuenta? Regístrate aquí</a></p>
+    </form>
+</section>
+</body>
